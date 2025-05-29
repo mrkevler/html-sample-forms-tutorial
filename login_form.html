@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Login form - Simple authentication with email and password validation"
+    />
+    <meta
+      name="keywords"
+      content="login, form, authentication, validation, HTML5, CSS3"
+    />
+    <meta name="author" content="Bartosz Sergot - mrKevler" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Login Form by mrKevler - HTML Forms Tutorial"
+    />
+    <meta
+      property="og:description"
+      content="Simple login form demonstrating HTML5 validation and CSS focus states"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bartoszsergot.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Login Form by mrKevler - HTML Forms Tutorial</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/image/favicon_bartosz_sergot_mrkevler.png"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img
+              src="./assets/image/bartosz_sergot_mrkevler_logo.webp"
+              alt="mrKevler - Bartosz Sergot Logo"
+            />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">← Back to Forms</a></li>
+            <li><a href="#form">Login Form</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Login Form</h1>
+            <p>
+              Simple yet effective authentication form with HTML5 validation,
+              CSS focus states, and responsive design principles
+            </p>
+          </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="form">
+          <div class="form-container">
+            <div class="form-header">
+              <h2>Sign In</h2>
+              <br />
+              <p>Please enter your credentials to access your account</p>
+            </div>
+
+            <form class="login-form" id="loginForm" novalidate>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                  autocomplete="email"
+                />
+                <span class="error-message" id="emailError"></span>
+                <small class="help-text"
+                  >I'll never share your email with anyone else</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                    minlength="6"
+                    autocomplete="current-password"
+                  />
+                  <button
+                    type="button"
+                    class="password-toggle"
+                    id="passwordToggle"
+                    aria-label="Show password"
+                  >
+                    👁️
+                  </button>
+                </div>
+                <span class="error-message" id="passwordError"></span>
+              </div>
+              <br />
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="remember" name="remember" />
+                  <span class="checkmark"></span>
+                  Remember me
+                </label>
+              </div>
+              <br /><br /><br />
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                  <span class="btn-text">Submit</span>
+                  <span class="btn-loading" style="display: none"
+                    >Signing in...</span
+                  >
+                </button>
+                <button type="reset" class="btn-secondary">Reset Form</button>
+              </div>
+              <br />
+              <div class="form-footer">
+                <a href="#" class="forgot-link">Forgot your password?</a>
+              </div>
+            </form>
+            <br /><br />
+            <div class="form-info">
+              <h3>Form Features</h3>
+              <br />
+              <ul>
+                <li>HTML5 validation with custom messages</li>
+                <li>CSS focus states and transitions</li>
+                <li>Password visibility toggle</li>
+                <li>Remember me functionality</li>
+                <li>Responsive design patterns</li>
+                <li>Accessibility features (WCAG compliant)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <br /><br />
+      <footer>
+        <div class="footer-content">
+          <div>
+            <h3>Navigation</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Forms Collection</a></li>
+              <li><a href="feedback_form.html">Feedback Form</a></li>
+              <li><a href="company_form.html">Company Form</a></li>
+              <li><a href="academy_form.html">Academy Form</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Login Form Demo</h3>
+            <p>
+              Interactive authentication form showcasing modern validation
+              techniques and user experience patterns.
+            </p>
+            <p style="margin-top: 10px">
+              <strong>By:</strong>
+              <a
+                href="https://bartoszsergot.com"
+                target="_blank"
+                rel="noopener"
+                style="color: #1e88e5; text-decoration: none"
+                >mrKevler</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Login Form by
+            <strong><a href="https://bartoszsergot.com">mrKevler</a></strong
+            >. HTML Forms Tutorial.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/script/login_form.js"></script>
+  </body>
+</html>

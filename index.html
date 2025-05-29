@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HTML forms showcase - Modern form design collection with responsive layouts and interactive elements"
+    />
+    <meta
+      name="keywords"
+      content="web development, portfolio, forms, HTML, CSS, JavaScript, responsive design"
+    />
+    <meta name="author" content="Bartosz Sergot - mrKevler" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="HTML Forms Tutorial by mrKevler - Web Development Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Interactive forms collection showcasing modern design patterns and user experience solutions"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bartoszsergot.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Forms Showcase by mrKevler - Interactive Form Collection</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/image/favicon_bartosz_sergot_mrkevler.png"
+    />
+  </head>
+
+  <body>
+    <div class="container" id="home">
+      <header>
+        <nav>
+          <div class="logo">
+            <img
+              src="./assets/image/bartosz_sergot_mrkevler_logo.webp"
+              alt="mrKevler - Bartosz Sergot Logo"
+            />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Interactive Forms Collection</h1>
+            <p>
+              Explore all designed forms showcasing modern web development
+              techniques, user experience patterns and responsive design
+              principles.
+            </p>
+            <button class="cta-button" onclick="scrollToSection('#forms')">
+              Browse Forms
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Form Designs</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Responsive</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">A11Y</span>
+              <span class="stat-label">Accessible</span>
+            </div>
+          </div>
+
+          <!-- Scroll Arrow -->
+          <div class="scroll-arrow" onclick="scrollToSection('#forms')">
+            <div class="arrow-icon">↓</div>
+            <span class="arrow-text">Explore Forms</span>
+          </div>
+        </section>
+
+        <!-- Forms Grid Section -->
+        <section class="forms-section" id="forms">
+          <div class="section-header">
+            <h2>Form Collection</h2>
+            <p>
+              Each form demonstrates different interaction patterns, validation
+              techniques and design approaches
+            </p>
+          </div>
+
+          <div class="forms-grid">
+            <div class="form-card">
+              <div class="form-preview">
+                <div class="preview-icon">🔐</div>
+                <h3>Form 1 - Login form</h3>
+                <p>
+                  Simple yet effective login form featuring email and password
+                  fields with comprehensive validation. Implements HTML5
+                  validation patterns, CSS focus states, and responsive design
+                  principles. Includes user-friendly error messaging and
+                  accessibility features for optimal user experience.
+                </p>
+                <div class="form-tags">
+                  <span class="tag">Login</span>
+                  <span class="tag">Authentication</span>
+                </div>
+              </div>
+              <div class="form-actions">
+                <a href="login_form.html" class="btn-primary">View Form</a>
+                <a href="login_form.html" class="btn-secondary">Live Demo</a>
+              </div>
+            </div>
+
+            <div class="form-card">
+              <div class="form-preview">
+                <div class="preview-icon">💬</div>
+                <h3>Form 2 - Feedback form</h3>
+                <p>
+                  Comprehensive post-session feedback form designed for
+                  educational environments. Features radio button groups,
+                  checkbox selections, and rating scale components. Implements
+                  conditional field display and comprehensive user experience
+                  evaluation metrics to gather detailed feedback from
+                  participants.
+                </p>
+                <div class="form-tags">
+                  <span class="tag">Feedback</span>
+                  <span class="tag">Survey</span>
+                </div>
+              </div>
+              <div class="form-actions">
+                <a href="feedback_form.html" class="btn-primary">View Form</a>
+                <a href="feedback_form.html" class="btn-secondary">Live Demo</a>
+              </div>
+            </div>
+
+            <div class="form-card">
+              <div class="form-preview">
+                <div class="preview-icon">👤</div>
+                <h3>Form 3 - Company form</h3>
+                <p>
+                  Advanced employee registration system with comprehensive data
+                  collection capabilities. Features multi-step validation,
+                  secure file handling for document uploads, and progressive
+                  disclosure techniques. Includes personal details, educational
+                  background, certification management, and employment
+                  preferences with dynamic field interactions.
+                </p>
+                <div class="form-tags">
+                  <span class="tag">Registration</span>
+                  <span class="tag">HR</span>
+                </div>
+              </div>
+              <div class="form-actions">
+                <a href="company_form.html" class="btn-primary">View Form</a>
+                <a href="company_form.html" class="btn-secondary">Live Demo</a>
+              </div>
+            </div>
+
+            <div class="form-card">
+              <div class="form-preview">
+                <div class="preview-icon">🎓</div>
+                <h3>Form 4 - Academy form</h3>
+                <p>
+                  Specialized educational feedback system designed for Code Labs
+                  Academy sessions. Incorporates conditional field logic,
+                  dynamic content generation, and comprehensive scale rating
+                  systems. Features session evaluation metrics, recommendation
+                  tracking, and detailed participant feedback collection with
+                  intelligent form adaptation.
+                </p>
+                <div class="form-tags">
+                  <span class="tag">Education</span>
+                  <span class="tag">Academy</span>
+                </div>
+              </div>
+              <div class="form-actions">
+                <a href="academy_form.html" class="btn-primary">View Form</a>
+                <a href="academy_form.html" class="btn-secondary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>About This Collection</h2>
+              <p>
+                This showcase demonstrates various form design patterns and
+                interaction techniques used in modern web development. Each form
+                is built with semantic HTML, accessible design principles and
+                progressive enhancement.
+              </p>
+              <ul class="feature-list">
+                <li>Semantic HTML5 structure</li>
+                <li>CSS Grid and Flexbox layouts</li>
+                <li>JavaScript form validation</li>
+                <li>Responsive design patterns</li>
+                <li>Accessibility best practices</li>
+              </ul>
+            </div>
+            <div class="about-stats">
+              <div class="tech-stack">
+                <h3>Technologies Used</h3>
+                <div class="tech-items">
+                  <span class="tech-item">HTML5</span>
+                  <span class="tech-item">CSS3</span>
+                  <span class="tech-item">JavaScript</span>
+                  <span class="tech-item">Grid</span>
+                  <span class="tech-item">Flexbox</span>
+                  <span class="tech-item">Accessibility</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <div class="footer-content">
+          <div>
+            <h3>Navigation</h3>
+            <ul class="footer-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#forms">Forms</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Form Showcase</h3>
+            <p>
+              Interactive collection showcasing modern form design patterns and
+              development techniques.
+            </p>
+            <p style="margin-top: 10px">
+              <strong>By:</strong>
+              <a
+                href="https://bartoszsergot.com"
+                target="_blank"
+                rel="noopener"
+                style="color: #1e88e5; text-decoration: none"
+                >mrKevler</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> HTML Forms Showcase by
+            <strong><a href="https://bartoszsergot.com">mrKevler</a></strong
+            >. Interactive demo collection for GitHub.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>

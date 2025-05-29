@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Company form - Employee details registration with personal information"
+    />
+    <meta
+      name="keywords"
+      content="company, employee, registration, form, HR, HTML5, CSS3"
+    />
+    <meta name="author" content="Bartosz Sergot - mrKevler" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Company Form by mrKevler - HTML Forms Tutorial"
+    />
+    <meta
+      property="og:description"
+      content="Employee details registration form with personal information and gender selection"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bartoszsergot.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Company Form by mrKevler - HTML Forms Tutorial</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/image/favicon_bartosz_sergot_mrkevler.png"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img
+              src="./assets/image/bartosz_sergot_mrkevler_logo.webp"
+              alt="mrKevler - Bartosz Sergot Logo"
+            />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">← Back to Forms</a></li>
+            <li><a href="#form">Company Form</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Employee Details</h1>
+            <p>
+              Simple employee registration form for collecting basic personal
+              information and contact details
+            </p>
+          </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="form">
+          <div class="form-container">
+            <div class="form-header">
+              <h2>Employee Details</h2>
+              <br />
+              <p>Please fill in your personal information</p>
+            </div>
+
+            <form class="company-form" id="companyForm" novalidate>
+              <!-- First name -->
+              <div class="form-group">
+                <label for="firstName">First name:</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  autocomplete="given-name"
+                />
+                <span class="error-message" id="firstNameError"></span>
+              </div>
+
+              <br />
+
+              <!-- Last name -->
+              <div class="form-group">
+                <label for="lastName">Last name:</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  autocomplete="family-name"
+                />
+                <span class="error-message" id="lastNameError"></span>
+              </div>
+
+              <br /><br />
+
+              <!-- Gender -->
+              <div class="form-group">
+                <div class="rating-group">
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="male" required />
+                    Male
+                  </label>
+
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="female" />
+                    Female
+                  </label>
+                </div>
+                <span class="error-message" id="genderError"></span>
+              </div>
+
+              <br /><br />
+
+              <!-- Employee ID -->
+              <div class="form-group">
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" id="employeeId" name="employeeId" required />
+                <span class="error-message" id="employeeIdError"></span>
+              </div>
+
+              <br />
+
+              <!-- Designation -->
+              <div class="form-group">
+                <label for="designation">Designation:</label>
+                <input
+                  type="text"
+                  id="designation"
+                  name="designation"
+                  required
+                />
+                <span class="error-message" id="designationError"></span>
+              </div>
+
+              <br />
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  required
+                  autocomplete="tel"
+                />
+                <span class="error-message" id="phoneNumberError"></span>
+              </div>
+
+              <br /><br />
+
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                  <span class="btn-text">Submit</span>
+                  <span class="btn-loading" style="display: none"
+                    >Submitting...</span
+                  >
+                </button>
+                <button type="reset" class="btn-secondary">Reset</button>
+              </div>
+            </form>
+
+            <br /><br />
+
+            <div class="form-info">
+              <h3>Form Features</h3>
+              <br />
+              <ul>
+                <li>Personal information collection</li>
+                <li>Gender selection with radio buttons</li>
+                <li>Employee ID and designation fields</li>
+                <li>Phone number validation</li>
+                <li>Clean and simple design</li>
+                <li>Responsive layout for all devices</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <br /><br />
+
+      <footer>
+        <div class="footer-content">
+          <div>
+            <h3>Navigation</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Forms Collection</a></li>
+              <li><a href="login_form.html">Login Form</a></li>
+              <li><a href="feedback_form.html">Feedback Form</a></li>
+              <li><a href="academy_form.html">Academy Form</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company Form Demo</h3>
+            <p>
+              Employee details registration form demonstrating simple data
+              collection with gender selection and contact information.
+            </p>
+            <p style="margin-top: 10px">
+              <strong>By:</strong>
+              <a
+                href="https://bartoszsergot.com"
+                target="_blank"
+                rel="noopener"
+                style="color: #1e88e5; text-decoration: none"
+                >mrKevler</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Company Form by
+            <strong><a href="https://bartoszsergot.com">mrKevler</a></strong
+            >. HTML Forms Tutorial.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/script/company_form.js"></script>
+  </body>
+</html>

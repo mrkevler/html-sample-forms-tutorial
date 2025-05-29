@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Feedback form - Post-session evaluation with emotions and satisfaction rating"
+    />
+    <meta
+      name="keywords"
+      content="feedback, form, survey, evaluation, emotions, HTML5, CSS3"
+    />
+    <meta name="author" content="Bartosz Sergot - mrKevler" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Feedback Form by mrKevler - HTML Forms Tutorial"
+    />
+    <meta
+      property="og:description"
+      content="Simple feedback form with emotions checkboxes and satisfaction rating"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bartoszsergot.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Feedback Form by mrKevler - HTML Forms Tutorial</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/image/favicon_bartosz_sergot_mrkevler.png"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img
+              src="./assets/image/bartosz_sergot_mrkevler_logo.webp"
+              alt="mrKevler - Bartosz Sergot Logo"
+            />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">← Back to Forms</a></li>
+            <li><a href="#form">Feedback Form</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>My Feedback Form</h1>
+            <p>
+              Simple feedback form with emotion checkboxes, satisfaction rating,
+              and file upload functionality
+            </p>
+          </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="form">
+          <div class="form-container">
+            <div class="form-header">
+              <h2>My feedback form</h2>
+              <br />
+              <p>Please share your feedback with us</p>
+            </div>
+
+            <form class="feedback-form" id="feedbackForm" novalidate>
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <br />
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <br />
+
+              <!-- Password -->
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+                <span class="error-message" id="passwordError"></span>
+              </div>
+
+              <br /><br />
+
+              <!-- Emotions -->
+              <div class="form-group">
+                <label>Please check all the emotions that apply to you:</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="emotions"
+                      value="angry"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    Angry
+                  </label>
+
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="emotions" value="sad" />
+                    <span class="checkmark"></span>
+                    Sad
+                  </label>
+
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="emotions" value="happy" />
+                    <span class="checkmark"></span>
+                    Happy
+                  </label>
+
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="emotions" value="ambivalent" />
+                    <span class="checkmark"></span>
+                    Ambivalent
+                  </label>
+                </div>
+              </div>
+
+              <br /><br />
+
+              <!-- Satisfaction -->
+              <div class="form-group">
+                <label>How satisfied were you with our service?</label>
+                <div class="rating-group">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="satisfaction"
+                      value="very-satisfied"
+                      checked
+                    />
+                    Very satisfied
+                  </label>
+
+                  <label class="radio-label">
+                    <input type="radio" name="satisfaction" value="satisfied" />
+                    Satisfied
+                  </label>
+
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="satisfaction"
+                      value="didnt-care"
+                    />
+                    Didn't care
+                  </label>
+
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="satisfaction"
+                      value="dissatisfied"
+                    />
+                    Dissatisfied
+                  </label>
+
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="satisfaction"
+                      value="very-dissatisfied"
+                    />
+                    Very dissatisfied
+                  </label>
+                </div>
+              </div>
+
+              <br /><br />
+
+              <!-- Further comments -->
+              <div class="form-group">
+                <label for="comments">Further comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+              </div>
+
+              <br />
+
+              <!-- Bio photo -->
+              <div class="form-group">
+                <label for="bioPhoto">Bio photo:</label>
+                <div class="file-upload-wrapper">
+                  <input
+                    type="file"
+                    id="bioPhoto"
+                    name="bioPhoto"
+                    accept="image/*"
+                  />
+                  Choose...
+                </div>
+                <span class="file-name" id="bioPhotoName">No file chosen</span>
+              </div>
+
+              <br />
+
+              <!-- Location -->
+              <div class="form-group">
+                <label for="location">Location visited:</label>
+                <select id="location" name="location">
+                  <option value="">Select location</option>
+                  <option value="new-york">New York</option>
+                  <option value="london">London</option>
+                  <option value="paris">Paris</option>
+                  <option value="tokyo">Tokyo</option>
+                  <option value="berlin">Berlin</option>
+                </select>
+              </div>
+
+              <br /><br />
+
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                  <span class="btn-text">Submit</span>
+                  <span class="btn-loading" style="display: none"
+                    >Submitting...</span
+                  >
+                </button>
+                <button type="reset" class="btn-secondary">Reset</button>
+              </div>
+            </form>
+
+            <br /><br />
+
+            <div class="form-info">
+              <h3>Form Features</h3>
+              <br />
+              <ul>
+                <li>Emotion checkbox selection with pre-selected option</li>
+                <li>Radio button satisfaction rating</li>
+                <li>File upload for bio photo</li>
+                <li>Location dropdown selection</li>
+                <li>Comprehensive form validation</li>
+                <li>Responsive design for all devices</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <br /><br />
+
+      <footer>
+        <div class="footer-content">
+          <div>
+            <h3>Navigation</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Forms Collection</a></li>
+              <li><a href="login_form.html">Login Form</a></li>
+              <li><a href="company_form.html">Company Form</a></li>
+              <li><a href="academy_form.html">Academy Form</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Feedback Form Demo</h3>
+            <p>
+              Simple feedback form demonstrating checkbox emotions, radio button
+              satisfaction rating, and file upload functionality.
+            </p>
+            <p style="margin-top: 10px">
+              <strong>By:</strong>
+              <a
+                href="https://bartoszsergot.com"
+                target="_blank"
+                rel="noopener"
+                style="color: #1e88e5; text-decoration: none"
+                >mrKevler</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Feedback Form by
+            <strong><a href="https://bartoszsergot.com">mrKevler</a></strong
+            >. HTML Forms Tutorial.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/script/feedback_form.js"></script>
+  </body>
+</html>

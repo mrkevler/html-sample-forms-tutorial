@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academy form - Code Labs Academy post-session feedback form"
+    />
+    <meta
+      name="keywords"
+      content="academy, feedback, code labs, session, education, HTML5, CSS3"
+    />
+    <meta name="author" content="Bartosz Sergot - mrKevler" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Academy Form by mrKevler - HTML Forms Tutorial"
+    />
+    <meta
+      property="og:description"
+      content="Code Labs Academy post-session feedback form with rating scales and topic questions"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bartoszsergot.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Academy Form by mrKevler - HTML Forms Tutorial</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/image/favicon_bartosz_sergot_mrkevler.png"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img
+              src="./assets/image/bartosz_sergot_mrkevler_logo.webp"
+              alt="mrKevler - Bartosz Sergot Logo"
+            />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">← Back to Forms</a></li>
+            <li><a href="#form">Academy Form</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Code Labs Academy Feedback</h1>
+            <p>
+              Post-session feedback form for Code Labs Academy with session
+              evaluation, topic questions, and rating scales
+            </p>
+          </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="form">
+          <div class="form-container">
+            <div class="form-header">
+              <h2>
+                Thank you for joining us for a session at Code Labs Academy!
+              </h2>
+              <br />
+              <p>Please share your feedback about today's session</p>
+            </div>
+
+            <form class="academy-form" id="academyForm" novalidate>
+              <!-- Session Date and Subject -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sessionDate">Session Date:</label>
+                  <input
+                    type="date"
+                    id="sessionDate"
+                    name="sessionDate"
+                    required
+                  />
+                  <span class="error-message" id="sessionDateError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Other</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="react">React</option>
+                    <option value="nodejs">Node.js</option>
+                    <option value="html-css">HTML & CSS</option>
+                    <option value="database">Database</option>
+                  </select>
+                  <span class="error-message" id="subjectError"></span>
+                </div>
+              </div>
+
+              <br /><br />
+
+              <!-- Topics Question -->
+              <div class="form-group">
+                <label for="topicsQuestion"
+                  >Please mention any topics you would like to ask further
+                  questions or gather more information on.</label
+                >
+                <textarea
+                  id="topicsQuestion"
+                  name="topicsQuestion"
+                  rows="4"
+                  placeholder="Enter topics you'd like to learn more about..."
+                ></textarea>
+              </div>
+
+              <br /><br />
+
+              <!-- Study at home -->
+              <div class="form-group">
+                <label>Do you study at home?</label>
+                <div class="rating-group">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="studyAtHome"
+                      value="yes"
+                      required
+                    />
+                    Yes
+                  </label>
+
+                  <label class="radio-label">
+                    <input type="radio" name="studyAtHome" value="no" />
+                    No
+                  </label>
+                </div>
+                <span class="error-message" id="studyAtHomeError"></span>
+              </div>
+
+              <br /><br />
+
+              <!-- Why seeking more information -->
+              <div class="form-group">
+                <label
+                  >Why are you seeking more information on these topics?</label
+                >
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="seekingInfo"
+                      value="interested-discussion"
+                    />
+                    <span class="checkmark"></span>
+                    I am interested in a more in depth discussion
+                  </label>
+
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="seekingInfo"
+                      value="didnt-understand"
+                    />
+                    <span class="checkmark"></span>
+                    I didn't understand it in the session
+                  </label>
+
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="seekingInfo"
+                      value="phone-apps"
+                    />
+                    <span class="checkmark"></span>
+                    Phone apps
+                  </label>
+                </div>
+              </div>
+
+              <br /><br />
+
+              <!-- Rating Scales -->
+              <div class="form-group">
+                <label for="informativeRating"
+                  >On a scale of 1 to 5*, please indicate how informative you
+                  felt the session was.</label
+                >
+                <input
+                  type="number"
+                  id="informativeRating"
+                  name="informativeRating"
+                  min="1"
+                  max="5"
+                  placeholder="Enter rating 1-5"
+                  required
+                />
+                <span class="error-message" id="informativeRatingError"></span>
+                <small class="help-text"
+                  >*1 = Not informative, 5 = Very informative</small
+                >
+              </div>
+
+              <br />
+
+              <div class="form-group">
+                <label for="engagingRating"
+                  >On a scale of 1 to 5*, please indicate how engaging you felt
+                  the session was.</label
+                >
+                <input
+                  type="number"
+                  id="engagingRating"
+                  name="engagingRating"
+                  min="1"
+                  max="5"
+                  placeholder="Enter rating 1-5"
+                  required
+                />
+                <span class="error-message" id="engagingRatingError"></span>
+                <small class="help-text"
+                  >*1 = Not engaging, 5 = Very engaging</small
+                >
+              </div>
+
+              <br />
+
+              <div class="form-group">
+                <label for="recommendRating"
+                  >On a scale of 1 to 5*, please indicate how likely you feel it
+                  is that you would recommend the course to a friend.</label
+                >
+                <input
+                  type="number"
+                  id="recommendRating"
+                  name="recommendRating"
+                  min="1"
+                  max="5"
+                  placeholder="Enter rating 1-5"
+                  required
+                />
+                <span class="error-message" id="recommendRatingError"></span>
+                <small class="help-text"
+                  >*1 = Very unlikely, 5 = Very likely</small
+                >
+              </div>
+
+              <br /><br />
+
+              <!-- Additional Feedback -->
+              <div class="form-group">
+                <label for="additionalFeedback"
+                  >Please use this space to give us any other feedback you may
+                  have.</label
+                >
+                <textarea
+                  id="additionalFeedback"
+                  name="additionalFeedback"
+                  rows="4"
+                  placeholder="Share any additional thoughts or suggestions..."
+                ></textarea>
+              </div>
+
+              <br /><br />
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="emailAddress">Email address:</label>
+                <input
+                  type="email"
+                  id="emailAddress"
+                  name="emailAddress"
+                  required
+                  autocomplete="email"
+                />
+                <span class="error-message" id="emailAddressError"></span>
+                <small class="help-text">For follow-up communication</small>
+              </div>
+
+              <br /><br />
+
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                  <span class="btn-text">Submit form</span>
+                  <span class="btn-loading" style="display: none"
+                    >Submitting...</span
+                  >
+                </button>
+                <button type="reset" class="btn-secondary">Reset</button>
+              </div>
+            </form>
+
+            <br /><br />
+
+            <div class="form-info">
+              <h3>Form Features</h3>
+              <br />
+              <ul>
+                <li>Session date and subject selection</li>
+                <li>Topic questions for further learning</li>
+                <li>Study habits and motivation checkboxes</li>
+                <li>Multiple rating scales (1-5)</li>
+                <li>Comprehensive feedback collection</li>
+                <li>Educational focus with Academy branding</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <br /><br />
+
+      <footer>
+        <div class="footer-content">
+          <div>
+            <h3>Navigation</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Forms Collection</a></li>
+              <li><a href="login_form.html">Login Form</a></li>
+              <li><a href="feedback_form.html">Feedback Form</a></li>
+              <li><a href="company_form.html">Company Form</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Academy Form Demo</h3>
+            <p>
+              Code Labs Academy feedback form demonstrating educational session
+              evaluation with rating scales and topic exploration.
+            </p>
+            <p style="margin-top: 10px">
+              <strong>By:</strong>
+              <a
+                href="https://bartoszsergot.com"
+                target="_blank"
+                rel="noopener"
+                style="color: #1e88e5; text-decoration: none"
+                >mrKevler</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Academy Form by
+            <strong><a href="https://bartoszsergot.com">mrKevler</a></strong
+            >. HTML Forms Tutorial.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/script/academy_form.js"></script>
+  </body>
+</html>
