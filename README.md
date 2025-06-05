@@ -9,6 +9,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/mrkevler/html-sample-forms-tutorial) ![Last Commit](https://img.shields.io/github/last-commit/mrkevler/html-sample-forms-tutorial)  
 [![Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-yellow)](https://buymeacoffee.com/mrkevler)
 
+
 ## 🔍 Table of Contents
 
 - [HTML Sample Forms Tutorial by mrKevler 💫](#html-sample-forms-tutorial-by-mrkevler-)
@@ -84,7 +85,7 @@ Key learning objectives:
 **File:** `feedback_form.html`  
 **Features:**
 
-- Emotion checkboxes (Angry, Sad, Happy, Ambivalent)
+- Emotion checkboxes:Angry, Sad, Happy, Ambivalent
 - Satisfaction radio buttons
 - File upload for bio photo
 - Location dropdown selection
